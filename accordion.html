@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Accordion</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            Click to get to know more about Career in AIML
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+            A career in Artificial Intelligence and Machine Learning involves developing algorithms and systems for machines to learn from data and make intelligent decisions. It offers opportunities across industries like healthcare, finance, and e-commerce, with roles in data science, machine learning engineering, and AI research. This field requires skills in computer science, mathematics, and problem-solving, and offers the chance to work on cutting-edge projects with the potential to transform industries and improve lives.
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Click to get to know more about Career in Medical field
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+        <div class="card-body">
+            A career in the medical field is both challenging and rewarding, offering opportunities to make a profound impact on people's lives. Professionals in healthcare dedicate themselves to improving patient outcomes, promoting wellness, and advancing medical knowledge. Roles in the medical field vary widely, ranging from physicians, nurses, and surgeons to medical researchers, therapists, and administrators. Each role requires a unique set of skills and qualifications, but all share a common commitment to providing compassionate care and maintaining the highest standards of professionalism and ethics. Careers in medicine often involve continuous learning and adaptation to new technologies and practices, as well as collaboration with multidisciplinary teams to address complex health issues. Overall, a career in the medical field offers the chance to make a difference in the lives of individuals and communities while pursuing a fulfilling and meaningful profession.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Initialize Bootstrap accordion
+    $(document).ready(function(){
+      $('.collapse').collapse();
+    });
+  </script>
+</body>
+</html>
